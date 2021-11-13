@@ -26,3 +26,28 @@ return [];
 }
 
 twoSum(nums, target)
+
+
+//solution using hashmap//
+
+const nums = [2, 4, 5, 6, 9,7];
+const target = 15
+
+function twoSum(nums, target){
+  //create a new empty hashmap//
+
+  const comp = {};
+  //itereate over each elements//
+  for(let i = 0; i < nums.length; i++){
+    let value = nums[i];
+    let complimentaryPair = target - value;
+    //check the conditions//
+    if(comp[complimentaryPair] !== undefined){
+      return[comp[complimentaryPair], i]
+    }else {
+     comp[value] = i;
+    }
+  }
+}
+
+twoSum(nums, target);
