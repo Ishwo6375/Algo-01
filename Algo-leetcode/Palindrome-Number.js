@@ -9,3 +9,10 @@
  // Output: false
 // Explanation: From left to right, it reads -121. From right to
 //  left, it becomes 121-. Therefore it is not a palindrome.
+
+var isPalindrome = function(num) {
+    
+let reversed = num.toString().split('').reverse().join('')
+return(num.toString() === reversed)
+    
+};
