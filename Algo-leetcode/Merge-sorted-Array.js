@@ -33,18 +33,20 @@ var merge = function(nums1, m, nums2, n){
     if(second < 0){
       break;
     }
-    //compare first and second which one is bigger//
+   //compare between 1st array and second array which one is greater//
+//if the element of 1st array is greater than 2nd array
     if(nums1[first] > nums2[second]){
       //if  last element of 1st array is greater than 2nd array//
         nums1[i] = nums1[first];
         first--;
     } else{
-      //if  last element of 1st array is less than 2nd array//
-      //set nums[i] element of 1st array is equal to  nums2[second] of 2nd array//
+      //if the element of 1st array is less than element of 2nd array//
+       //assign nums1[i] = nums2[second]
       nums1[i] = nums2[second];
       second--;
     }
   }
+  return nums1;
 }
 
 

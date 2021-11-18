@@ -51,3 +51,6 @@ function twoSum(nums, target){
 }
 
 twoSum(nums, target);
+
+//time complexity = o(N^2) => O(n)
+//space complexity = O(1)
