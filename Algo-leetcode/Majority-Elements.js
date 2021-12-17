@@ -7,8 +7,18 @@
 // Input: nums = [2,2,1,1,1,2,2]
 // Output: 2const nums = [3, 2, 3];
 
+//edge case =>  if the array has only one element return that element as majority element//
+//assign a variable half and set it equal to half of length of array// .length/2//
+//solving problem using Map. Create a new Map()//
+//iterate over each element in the array//
+//check if the current element we are on in map or not//
+//if its not in map add the element to map and set it frequency to 1//
+//if it is alreay in the map increase its frequency by 1//
+//if the number in the map has seen more than half of the length of array//
+//that number is the majority number//
+//if none of the element is majority number// return -1;
 
-var majorityElement = function(nums) {
+var majorityElement = function (nums) {
   //edge case//
   //if the array has only one element return that element as majority element//
   if (nums.length === 1) {
@@ -28,17 +38,17 @@ var majorityElement = function(nums) {
       //set it to the map with the count of 1//
       majorityCount.set(num, 1);
       //if it is already on the map set it count to 1 more than before//
-    }else{
-    majorityCount.set(num, majorityCount.get(num) + 1);
+    } else {
+      majorityCount.set(num, majorityCount.get(num) + 1);
     }
- //if the number in the map has seen more than half of the length of array//
- //that number is the majority number//
+    //if the number in the map has seen more than half of the length of array//
+    //that number is the majority number//
     if (majorityCount.get(num) > half) {
       return num;
     }
   }
   //if none of the element is majority number//
   return -1;
-}
+};
 
-majorityElement(nums) //output => 3
+majorityElement(nums); //output => 3

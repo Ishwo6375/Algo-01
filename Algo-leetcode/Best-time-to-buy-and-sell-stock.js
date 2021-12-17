@@ -13,6 +13,16 @@
 // Output: 0
 // Explanation: In this case, no transactions are done and the max profit = 0.
 
+//PSUDEO CODE//
+//assign a variable minimium buy price and set it eqaul to infinity//
+//assign a variable maxprofit to hold the maximum profit and set it equal to 0//
+//iterate over each elements in the array//
+//check if the price of current stock we are on is lower than minimum buy price//
+//if it is  less than minimum buy price//
+//replace minimum buy price with curren stock//
+//else if our current price minus minimum buy price is greater than our max profit//
+//update our max profit with that differnce//
+
 const stocks = [7, 1, 5, 3, 6, 4];
 
 var maxProfit = function(prices) {

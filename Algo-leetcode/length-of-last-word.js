@@ -40,6 +40,11 @@ var lengthOfLastWord = function(s){
 
 lengthOfLastWord("hello world"); //output = 5
 
+///#########Another solution//
+ 
+ 
+
+
 
 //###########Another solution////
 

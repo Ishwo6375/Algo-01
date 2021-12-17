@@ -5,6 +5,15 @@
 // answer[i] == "Buzz" if i is divisible by 5.
 // answer[i] == i if non of the above conditions are true.
 
+//psudeo code//
+//assing a variable result to hold the result in the end//
+//create a loop for 1 to current num// ex: n = 5 // loop from 1 t0 5
+//check condition if the number is divisible by 3 and 5//
+//if it is divisible by both numbers push "FizzBuzz" to result//
+//if it is divisible by only 3 push "Fizz" to result//
+//if it is divisible by only 5 push "Buzz" to result//
+//if it is not divisble by any of these numbers return that num to string//
+
 const n = 15
 var fizzBuzz = function(n){
   //create a new array "result" to hold output

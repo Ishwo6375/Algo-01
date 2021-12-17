@@ -8,6 +8,15 @@
 // Input: nums = [1]
 // Output: 1
 
+//psuedo code//
+//declare two variable maxCurrent and maxGlobal//
+//set both variable equal to 1st index of array//
+//loop over each element in the array//
+//get maximum number between maxCurrent + element we are on//
+//check condition if maxCurrent is greater than maxGlobal//
+//if maxGlobal is greater set maxGlobal equal to maxCurrent//
+//return maxGlobal at the end//
+
 const nums = [-1, 2, 3, -5, 4]
 
 //make two variable curr and global string//
@@ -18,6 +27,8 @@ const nums = [-1, 2, 3, -5, 4]
 var maxSubArray = function(nums) {
   //declare two variable maxCurrent and maxGlobal//
   //set both variable equal to 1st value of array//
+   //one to keep track of current max sub array//
+  //another to keep track of global max sub array//
   let maxCurrent = nums[0];
   let maxGlobal = nums[0];
 

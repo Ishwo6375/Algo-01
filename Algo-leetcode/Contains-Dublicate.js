@@ -10,6 +10,16 @@
 // Input: nums = [1,1,1,3,3,4,3,2,4,2]
 // Output: true
 
+
+//Psudedo Code///
+//solving problem using set// //set can only have unique value//
+//create a new set//
+//iterate over each elements in the array//
+//check if current element we are on is in set or not//
+//if its not in set add it to set//
+//if the current element we are on already in set return true//
+//if there is  no any dublicates found return false 
+
 //time complexity = O(N) linear
 //space complexity = O(1) constant
 
