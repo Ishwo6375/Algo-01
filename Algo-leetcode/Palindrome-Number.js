@@ -16,3 +16,31 @@ let reversed = num.toString().split('').reverse().join('')
 return(num.toString() === reversed)
     
 };
+
+//Another solution//
+
+const x = 121
+var isPalindrome = function(x){
+  //edge case//
+  if(x < 0){
+    return false;
+  }
+
+  return x === reversedInteger(x)
+}
+
+var reversedInteger = function(x){
+  let reversed = 0;
+
+  while(x > 0){
+    reversed = (reversed * 10) + (x % 10);
+    x = Math.floor(x / 10)
+  }
+
+  return reversed;
+}
+
+isPalindrome(x) //output => true
+
+ 
+

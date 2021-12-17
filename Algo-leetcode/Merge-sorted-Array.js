@@ -17,6 +17,20 @@
 // Explanation: The arrays we are merging are [1] and [].
 // The result of the merge is [1].
 
+//Pseudo code//
+//create a variable first and second to get the last element of each array//
+//set it value to last index of each array//
+//iterate over both elements backward// // right to left//
+////finish the iteration immediatly if the length of second array is less than 0//
+//compare between 1st array and second array which one is greater//
+//if element fo first array is greater then element of second array//
+//set that element to last elemlent of  first array//
+//move to the next element from right to left//
+//if the element of second array is greater then element on first array//
+//set that element to last element of first array//
+//move to the next element from right to left//
+//return the array
+
 const nums1 = [1, 2, 3, 0,0,0] 
 const m = 3
 const nums2 = [2,5,6] 
@@ -29,7 +43,7 @@ var merge = function(nums1, m, nums2, n){
 
   //iterate over both arrays backword//
   for(let i = m + n - 1; i >= 0; i--){
-    //finish iteration if second length equal to 0//
+    //finish iteration if second array is less than 0//
     if(second < 0){
       break;
     }
