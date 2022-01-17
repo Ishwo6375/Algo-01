@@ -9,6 +9,18 @@
 // Input: s = "aabb"
 // Output: -1
 
+//solving problem using map//
+//create a new Map()//
+//iterate over each character in the string//
+//check condition weather the character we are on map or not//
+//if it is on map already increment its frequency by 1//
+//if it is not on map add it to map and set its frequency to 1//
+//loop over each elements again//
+//assin a variabl and set it equal to first index of array//
+//if the characters stored in map frequency is equal to 1//
+//return that character// because that is the first unique character//
+//if no unique character found return -1//
+
 var firstUniqueChar = function(s) {
   //create a map that holds character with its frequency//
   let frequencies = new Map();

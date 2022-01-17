@@ -13,6 +13,15 @@
 //sub-optimal approach (using HashSet)
 //time complexity = O(N)
 //Space complexity = O(N)
+
+// Pseudo code//
+//solving problem using set//
+//create a new set// 
+//iterate over each elements//
+//check conditon if the element we are on is in set or not//
+//if it is already in the set delete that element//
+//if it is not in the set add it to set 
+//return 1st index of set using Array.from method//
 const nums = [1, 2, 2, 1, 3, 3, 4];
 
 var singleNumber = function (nums) {
@@ -39,6 +48,8 @@ singleNumber(nums); //=> output = 4
 //Optimal solution//
 //time complexity = O(N) //linear//
 //Space complexity = O(1) constant//
+
+
 
 
 let singleNumber = function (nums) {

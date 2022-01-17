@@ -15,6 +15,14 @@
 // Incrementing by one gives 4321 + 1 = 4322.
 // Thus, the result should be [4,3,2,2].
 
+//Pseudo Code//
+//loop over each element from rigth to left//
+//check condtion if the current no we are on is eqaul to 9 or not/
+//if it is not 9 increment current element by 1//
+//return array//
+//if it is 9 set 9 equals to 0//
+//if all elements in array is 9 set all elment to 0 and add 1 from the front of array using ushift//
+
 const digits = [1, 2, 4];
 
 var plusOne = function(digits){
